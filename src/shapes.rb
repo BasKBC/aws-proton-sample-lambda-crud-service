@@ -133,9 +133,10 @@ class CreateTaskInput
       valid = false
     end
     if @status.nil?
-      @errors << "Missing 'status' parameter."
+      @errors << "Missing 'status' parameter. ya donkey"
       valid = false
     end
+    print "IS VALID"
     valid
   end
 
