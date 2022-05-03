@@ -142,8 +142,10 @@ class CreateTaskInput
 
   def error
     if @errors.empty?
+      print "No errors found"
       nil
     else
+      print "Error found " + @errors.join(" ")
       InvalidInputException.new(@errors.join(" "))
     end
   end
